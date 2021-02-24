@@ -12,7 +12,8 @@ class Anagram
     anagram_list = []
     
     anagram.each do |w|
-      sorted_w = w.sort
+      sorted_w = w.split(//).sort{|a| a}.join
+      
     end
   end
 end
